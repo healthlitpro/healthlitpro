@@ -5,10 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
-        <Routes>
-          <Route path="/*" element={<App />} />
-        </Routes>
+    <BrowserRouter basename="/healthlitpro">
+          <App />
     </BrowserRouter>
   </React.StrictMode>
 );
